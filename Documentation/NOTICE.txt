@@ -1,0 +1,24 @@
+In case you Experience any error while uploading logos or images on your server, 
+Kindly replace the code on your .httaces with the flollowing line.
+
+
+
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} !^public
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+****************************************************************************
+  NOTE - FOR ACCOUNT DELETION URL SETUP
+Also, to setup the account deletion option, just go to admin side under manage support and add new item and call it delete account. Place the url as
+https://yoursitename.com/login. Make sure it is marked as active then save.
+Thank you.
+*****************************************************************************
+
+
+
+***********************************************************************************
+                                    THANK YOU !
+***********************************************************************************
